@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise #3 || Website header</title>
+    <!-- 
+    Video: https://www.youtube.com/watch?v=vqXLGX0szIQ
+
+    Timestamp:
+	  00:43:18 Exercise #3: Website header
+
+    EXTRA:
+    Transition properties should be declared on parent/main element .btn instead of pseudo elements like .btn:hover.
+    -->
 
     <!-- Reset -->
     <link
@@ -64,8 +73,11 @@
         transition-timing-function: ease-in-out;
         transition-delay: 2s; */
 
-        /* Multiple lines above is the same as shorthand code below */
+        /* Multiple lines above is the same as shorthand code below, but without the transition-delay */
         transition: background-color 0.4s ease-in-out;
+
+        /* NOT recommended: "transition: all" because of the performance loss */
+        /* transition: all .4s ease-in-out; */
       }
 
       .btn:hover {
